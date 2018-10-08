@@ -30,5 +30,5 @@ module.exports = {
 		contentBase: parentDir,
 		historyApiFallback: true
 	},
-	mode: 'development'
+	mode: 'production'
 }
