@@ -1,0 +1,78 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background: #396afc;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #2948ff, #396afc);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #2948ff, #396afc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	display: grid;
+	grid-template-columns: auto;
+	color: #323232;
+}
+
+#app {
+	display: grid;
+	max-width: 600px;
+	align-self: center;
+	justify-self: center;
+}
+
+#app h1 {
+	text-align: center;
+	font-size: 46px;
+	color: #fff;
+}
+
+#app input {
+	height: 40px;
+	width: 400px;
+	border: none;
+	padding: 0px 15px;
+	margin-right: 10px;
+}
+
+#app button {
+	background-color: #ffc600;
+	border: #ffc600;
+	border: none;
+	padding: 10px 15px;
+	font-size: 15px;
+	line-height: 20px;
+	position: relative;
+	top: 2px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 20px 0px;
+	padding: 0;
+	max-height: 800px;
+}
+
+li {
+	position: relative;
+	background: #fff;
+	padding: 10px;
+	margin: 10px 0px;
+	border-left: #ffc600 10px solid;
+	transition: ease-in-out 0.2s;
+	overflow: hidden;
+}
+
+li::before {
+	content: 'x';
+	float: right;
+	position: absolute;
+	right: -50px;
+	transition: ease-in-out 0.2s;
+	color: #ff3029;
+}
+
+li:hover {
+	transform: scale(1.1);
+	background-color: #fbfbfb;
+
+}
+
+li:hover::before {
+	right: 15px;
+}
+
