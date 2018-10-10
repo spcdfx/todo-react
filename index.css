@@ -44,13 +44,13 @@ ul {
 	list-style-type: none;
 	margin: 20px 0px;
 	padding: 0;
-	max-height: 800px;
+	max-width: 480px;
 }
 
 li {
 	position: relative;
 	background: #fff;
-	padding: 10px;
+	padding: 10px 35px 10px 10px;
 	margin: 10px 0px;
 	border-left: #ffc600 10px solid;
 	transition: ease-in-out 0.2s;
